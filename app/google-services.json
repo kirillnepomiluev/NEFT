@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741482813466",
+    "firebase_url": "https://neft-d9691.firebaseio.com",
+    "project_id": "neft-d9691",
+    "storage_bucket": "neft-d9691.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741482813466:android:374d15fc6bbcbdbd",
+        "android_client_info": {
+          "package_name": "com.example.neft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741482813466-d1c109f97k5c9dtnfp7cj3kvpipqs2a1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.neft",
+            "certificate_hash": "d3a2f54be85c54c1976ef0a6e3badb75d8465180"
+          }
+        },
+        {
+          "client_id": "741482813466-n1kvmq59k2a0quvc2tq70mpr09qqdf3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-KI41nk7u7OqsXlYysS8-phpRRAeSfmQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741482813466-n1kvmq59k2a0quvc2tq70mpr09qqdf3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

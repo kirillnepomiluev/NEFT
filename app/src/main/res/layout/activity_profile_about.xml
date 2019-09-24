@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProfileAboutActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/itemlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/arrowicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            app:srcCompat="@drawable/iconarrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-20dp"
+            android:layout_marginLeft="-20dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toStartOf="@+id/iconredact"
+            android:layout_toLeftOf="@+id/iconredact"
+            android:layout_toEndOf="@+id/arrowicon"
+            android:layout_toRightOf="@+id/arrowicon"
+            android:fontFamily="@font/montserratsemibold"
+            android:maxLines="2"
+            android:padding="1dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentBottom="false"
+            android:layout_marginStart="-20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toStartOf="@+id/iconredact"
+            android:layout_toLeftOf="@+id/iconredact"
+            android:layout_toEndOf="@+id/arrowicon"
+            android:layout_toRightOf="@+id/arrowicon"
+            android:fontFamily="@font/montserratregular"
+            android:lines="1"
+            android:textColor="@color/textgrey2"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/iconredact"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/pointsicon"
+            android:layout_toLeftOf="@+id/pointsicon"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iconinvite" />
+
+        <ImageButton
+            android:id="@+id/pointsicon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="center"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            app:srcCompat="@drawable/threepoints" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/postsbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="center"
+            android:padding="20dp"
+            android:scaleX="1"
+            android:scaleY="0.8"
+            android:text="Posts"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/aboutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="center"
+            android:padding="20dp"
+            android:scaleX="1"
+            android:scaleY="0.8"
+            android:text="@string/about"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="bottom"
+                android:paddingLeft="30dp"
+                android:text="@string/userid"
+                android:textColor="@color/verydarkgreytext"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/idicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_background2"
+                    android:scaleType="centerInside"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    app:srcCompat="@drawable/iconuserid" />
+
+                <TextView
+                    android:id="@+id/idtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.22"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="TextView"
+                    android:textColor="@color/darkgreytext"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="bottom"
+                android:paddingLeft="30dp"
+                android:text="@string/status"
+                android:textColor="@color/verydarkgreytext"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iconstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_background2"
+                    android:scaleType="centerInside"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    app:srcCompat="@drawable/iconstatus" />
+
+                <TextView
+                    android:id="@+id/statustext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.22"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="TextView"
+                    android:textColor="@color/darkgreytext"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="bottom"
+                android:paddingLeft="30dp"
+                android:text="@string/hobbies"
+                android:textColor="@color/verydarkgreytext"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iconhobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_background2"
+                    android:scaleType="centerInside"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    app:srcCompat="@drawable/iconhobbies" />
+
+                <TextView
+                    android:id="@+id/hobbiestext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.22"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="TextView"
+                    android:textColor="@color/darkgreytext"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="bottom"
+                android:paddingLeft="30dp"
+                android:text="@string/realtionship"
+                android:textColor="@color/verydarkgreytext"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iconheart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_background2"
+                    android:scaleType="centerInside"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    app:srcCompat="@drawable/iconheart" />
+
+                <TextView
+                    android:id="@+id/hearttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.22"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="TextView"
+                    android:textColor="@color/darkgreytext"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="bottom"
+                android:paddingLeft="30dp"
+                android:text="@string/location"
+                android:textColor="@color/verydarkgreytext"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey_background2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iconlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_background2"
+                    android:scaleType="centerInside"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    app:srcCompat="@drawable/iconlocation" />
+
+                <TextView
+                    android:id="@+id/locationtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.22"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="TextView"
+                    android:textColor="@color/darkgreytext"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
